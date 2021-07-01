@@ -11,7 +11,7 @@ real:: nota
 write(*,*) "Nota: "
 read(*,*) nota
 
-if (nota<0) then
+if (nota<0 .or. nota>10) then
 	write(*,*) "Nota inválida!"
 	stop 1
 end if
